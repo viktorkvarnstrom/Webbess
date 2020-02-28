@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: rgba(219, 213, 213, 0.253);
+}
+
+
+.floatingNav {
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px #999;
+}
+
+
+
+.navbar-header {
+    margin: 0;
+    padding: 0 1em;
+
+    img {
+        height: 70px;
+        width: 150px;
+    }
+
+    ul {
+        margin-left: auto;
+    }
+
+    li {
+        font-weight: bold;
+        padding: 12px;
+
+        .cool-link {
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .cool-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #2568a3e5;
+            transition: width .3s;
+        }
+        
+        .cool-link:hover::after {
+            width: 100%;
+            //transition: width .3s;
+        }
+
+    }
+
+    .phonenumber {
+        color: black;
+        padding-left: 10px;
+        margin-right: 10%;;
+    }
+
+    @media (max-width: 574px) {
+        nav {
+            height: 100px;
+        }
+    }
+
+
+}
+
+#showcase {
+    color: #eaeaea;
+    text-align: center;
+    background: #0a477ce5;
+    opacity: 0.9;
+    font-size: 1em;
+}
+
+#showcase h1 {
+    padding-top: 2.5em;
+    padding-bottom: 0;
+    font-size: 2em;
+}
+#showcase p {
+    font-size: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+
+#topheader {
+
+    h1 {
+        margin-top: 70px;
+        padding-top: 10px; 
+        background-color: rgba(255, 255, 255, 0.651);
+        text-align: center;
+    }
+
+    .imgtop {
+        background-image: url('../image/showwebb.jpeg');
+        height: 80vh;
+        background-size: cover;
+    }
+
+    @media (max-width: 574px) {
+        h1 {
+            font-size: 30px;
+            margin-top: 70px;
+            padding-top: 20px;
+            background-color: rgba(255, 255, 255, 0.651);
+        }
+    }
+}
+
+#offer {
+    @media (max-width: 574px) {
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+        
+    }
+}
+
+#code {
+    position: relative;
+    margin-top: 120px;
+
+    img {
+        height: 600px;
+        width: 100%;
+    }
+
+    margin: 20px;
+
+    @media (max-width: 574px) {
+        img {
+            height: 200px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 25px;
+            top: 7%;
+            left: 7%;
+        }
+    }
+}
+
+
+#about {
+    h1 {
+        text-align: right;
+
+    }
+
+
+    img {
+        border-radius: 2px;
+    }
+
+    @media (max-width: 574px) {
+        
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        img {
+            height: 350px;
+            width: 250px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+    margin: 40px 0;
+}
+
+
+#map {
+
+    iframe {
+        height: 660px;
+        width: 100%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    span {
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    form {
+        button {
+            background-color :#0a477ce5;
+            color: #fff;
+            outline: none;
+            border: none;
+        }
+    }
+
+    @media (max-width: 574px) {
+        h1 {
+            font-size: 25px;
+            text-align: center;
+
+        }
+
+        iframe {
+            height: 300px;
+        }
+        
+    }
+    
+}
+
+#contactdata {
+    
+    ul {
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0;
+    }
+
+    @media (max-width: 574px) {
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+}
+
+#footer {
+    background-color: #0a477ce5;
+    height: 200px;
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    span {
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    hr {
+       background-color: #fff;
+    }
+
+    img {
+        height: 70px;
+        width: 150px;
+    }
+
+    #linksfooter {
+        display: flex;
+        
+        li {
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 574px) {
+         height: 400px;
+    }
+}
